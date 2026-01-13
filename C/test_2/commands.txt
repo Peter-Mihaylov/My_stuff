@@ -1,0 +1,3 @@
+gcc -c mystrings.c  -o mystrings.o
+gcc main.c mystrings.o -o main.exe
+./main.exe
