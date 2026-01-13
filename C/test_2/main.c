@@ -2,15 +2,15 @@
 #include <string.h>
 #include "mystrings.h"
 #define MAX_LEN 255
-
+#define TOPERATOR(A, B) A<B 
 int main() 
 {
     char osname[MAX_LEN];
     #ifdef _WIN32
         strcpy(osname, "Windows");
-    #elif defined __linux__
+    #elif defined(__linux__)
         strcpy(osname, "Linux");
-    #elif defined __APPLE__
+    #elif defined(__APPLE__)
         strcpy(osname, "Mac");
     #else
         strcpy(osname, "Other");
